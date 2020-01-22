@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+        }
+        
+        #con2 {
+            height: 400px;
+            width: 600px;
+            border: #333 solid 1px;
+            padding: 5px;
+        }
+        
+        p {
+            line-height: 18px;
+            text-indent: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="con">JavaScript课程</h2>
+    <div id="con2">
+        <p>欢迎学习javascript，首先</p>
+        <p>哈哈哈哈</p>
+    </div>
+    <form>
+        <input type="button" value="改变颜色" onclick="changeColor()" />
+        <input type="button" value="改变宽高" onclick="changeWD()" />
+    </form>
+    <script type="text/javascript">
+        var myobj = document.getElementById("con2");
+
+        function changeColor() {
+            myobj.style.color = "red";
+        }
+
+        function changeWD() {
+            width = 100;
+            weight = 200;
+        }
+    </script>
+</body>
+
+</html>
